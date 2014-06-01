@@ -56,9 +56,6 @@ public class Indent1 extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_indent1);
 		
-		btnLanjut = (Button) findViewById(R.id.btnLanjutIndent);
-		radioJawaban = (RadioGroup) findViewById(R.id.radioGroup1);
-		
 		// get intent
 		Bundle b = getIntent().getExtras();
 		List<NameValuePair> myEntities = new ArrayList<NameValuePair>();
@@ -84,6 +81,9 @@ public class Indent1 extends Activity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		
+		btnLanjut = (Button) findViewById(R.id.btnLanjutIndent);
+		radioJawaban = (RadioGroup) findViewById(R.id.radioGroup1);
 		
 		btnLanjut.setOnClickListener(new OnClickListener() {
 			
